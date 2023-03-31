@@ -1,0 +1,195 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.6.5, 3 Nov 2022) written by LianTze Lim (liantze@gmail.com), based on the
+% CV created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 package.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+\definecolor{LoyalBlue}{HTML}{000080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{tagline}{LoyalBlue}
+\colorlet{heading}{LoyalBlue}
+\colorlet{headingrule}{LoyalBlue}
+ \colorlet{accent}{LoyalBlue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\input{pubs-num.cfg}
+
+
+\begin{document}
+\name{Yann LeCostaouëc}
+\tagline{Software Engineering Expert}
+
+\personalinfo{
+  \email{yann@strongrib.com}
+  \phone{719-406-7378}
+  \location{Nashua, NH}
+  \homepage{strongrib.com}
+  \linkedin{ylecost}
+  \github{ylecost} 
+}
+
+\makecvheader
+
+\AtBeginEnvironment{itemize}{\small}
+
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{Owner \& Principal Software Consultant}{Strong Rib Solutions LLC}{Mar. 2022 - Present}{Nashua, NH}
+\begin{itemize}
+\item Built reporting, billing, and Docusign enhancements to Ruby on Rails web app for Advanced PICC Specialists, a health care company
+\item Performed PHP, CSS, and HTML updates with tight deadlines to high-volume Wordpress site for Envoy, a logistics software startup
+\end{itemize}
+
+\divider
+
+\cvevent{Chief Product Owner}{Maxar Technologies}{Sept. 2021 - Jan. 2022}{Westminster, CO}
+\begin{itemize}
+\item Owned and drove execution of large multi-team backlog and supervised product roadmap creation for optical satellite ground system
+\item Formed and motivated working group to improve monitoring by creating analytics dashboards in AWS and ELK
+\end{itemize}
+
+\divider
+
+\cvevent{Senior Product Owner \& Senior Systems Engineer}{Maxar Technologies}{Dec. 2015 - Sept. 2021}{Westminster, CO}
+
+\begin{itemize}
+\item Collected market research and collaborated with development teams to deliver superior cloud identification UI
+\item Persuaded management of my vision to rewrite a complex workflow into AWS, decreasing costs and increasing performance and scalability
+\item Managed smooth integration of high-value machine learning algorithms for automated cloud and haze cover detection
+\item Innovated and presented high-impact architecture to lower processing latency and increase image accuracy in ingest phase
+\item Designed APIs, entity and sequence diagrams for micro-services
+\end{itemize}
+
+\divider
+
+\cvevent{Senior Software Engineer, Team Lead \&  Scrum Master}{MDA Information Systems}{Mar. 2013 - Dec. 2015}{Longmont, CO}
+
+\begin{itemize}
+\item Developed time-saving automated image QA system in Java and Javascript
+\item Wrote Python backend process monitor
+\item Created Oracle SQL reporting tool for European Space Agency
+\end{itemize}
+
+\divider
+
+\cvevent{Software Engineer, Technical Lead \& Software Architect}{Ricoh Production Print Solutions}{July 2009 - Mar. 2013}{Boulder, CO}
+
+\begin{itemize}
+\item Provided stellar technical leadership and strategic vision for high-speed printer image processing system written in C
+\item Optimized algorithm for image rotation, scaling, clipping, and half-toning
+\item Parallelized color interpolation on a GPU with OpenCL
+\end{itemize}
+
+\newpage
+
+\switchcolumn
+
+\cvsection{Certifications}
+
+\cvachievement{\faAward}{Scaled Agile Framework (SAFe) Agilist}{Scaled Agile, Inc.}
+
+\divider
+
+\cvachievement{\faCloud}{Certified AWS Solutions Architect}{Amazon Web Services}
+
+\divider
+
+\cvachievement{\faUsers}{Certified Product Owner (CSPO)}{Scrum Alliance}
+
+\divider
+
+\cvachievement{\faChartLine}{Certified Scrum Master (CSM)}{Scrum Alliance}
+
+\cvsection{Awards}
+\cvachievement{\faTrophy}{Distinguished Toastmaster Award}{Toastmasters International}
+
+\divider
+
+\cvachievement{\faLightbulb}{Patent \# 8964192 (Print verification database mechanism)}{U.S. Patent and Trademark Office}
+
+\cvsection{Skills}
+
+\cvtag{Java/Spring}
+\cvtag{C/C++}
+\cvtag{Python}\\
+\cvtag{Ruby/Rails}
+\cvtag{SQL}
+\cvtag{AWS}
+\cvtag{Javascript}
+\cvtag{ReactJS}
+\cvtag{NodeJS}
+\cvtag{ExpressJS}
+\cvtag{NestJS}
+\cvtag{MongoDB}
+\cvtag{PHP}
+\cvtag{HTML/CSS}
+\cvtag{Git}
+\cvtag{Rally}
+\cvtag{Jira}
+
+\divider\smallskip
+
+\cvtag{Leadership}
+\cvtag{Communication}
+\cvtag{TDD/BDD}
+
+\cvsection{Languages}
+
+\cvskill{English}{5}
+% \divider
+
+\cvskill{French}{4}
+% \divider
+
+\cvsection{Education}
+
+\cvevent{M.S.\ in Math and Computer Sciences}{Colorado School of Mines}{2007 - 2009}{Golden, CO}
+
+\divider
+
+\cvevent{B.A.\ in Liberal Studies}{Magdalen College}{2002 - 2006}{Warner, NH}
+
+\end{paracol}
+
+\end{document}
